@@ -1,0 +1,61 @@
+@use "./modules/" as m;
+
+body {
+  font-family: m.$font-body;
+}
+
+// navbar
+.navbar {
+  height: 7.5rem;
+  padding: 1rem;
+
+  &__cols {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &__music-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & * {
+      line-height: 1;
+    }
+  }
+
+  &__music-state {
+    font-size: var(--step--2);
+    font-weight: m.weight(light);
+    color: hsla(from m.color(neutral__black) h s l / 0.5);
+  }
+
+  &__music-title {
+    font-size: var(--step-1);
+    font-weight: m.weight(bold);
+    text-transform: capitalize;
+  }
+
+  &__music-artist {
+    font-weight: m.weight(medium);
+    font-size: var(--step--1);
+    color: hsla(from m.color(neutral__black) h s l / 0.75);
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    & img {
+      max-width: 3rem;
+    }
+  }
+}

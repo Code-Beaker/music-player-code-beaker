@@ -1,0 +1,18 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "latest"
+  },
+  "keywords": [],
+  "author": "code-beaker",
+  "license": "ISC",
+  "description": "Music Player, a challenge from iCodeThis"
+}
