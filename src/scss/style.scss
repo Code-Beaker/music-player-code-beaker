@@ -155,6 +155,10 @@ body {
       }
     }
 
+    &:active {
+      scale: 0.95;
+    }
+
     & img {
       transition: 0.25s ease;
       max-width: 1.5rem;
