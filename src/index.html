@@ -15,7 +15,7 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="navbar__cols">
+      <div class="navbar__cols search-shown">
         <button id="toggleSidebar" class="navbar__toggle-btn navbar__btn">
           <img src="assets/icon-menu.svg" alt="" id="toggleSidebarIcon" />
         </button>
@@ -24,7 +24,13 @@
           <h1 class="navbar__music-title">Setting fires</h1>
           <h2 class="navbar__music-artist">The Chainsmokers</h2>
         </div>
-        <button class="navbar__playlist-btn navbar__btn">
+        <input
+          type="search"
+          placeholder="Search for music, artists and more..."
+          id="searchForMusic"
+          class="navbar__search"
+        />
+        <button id="searchButton" class="navbar__search-btn navbar__btn">
           <img src="assets/icon-search.svg" alt="" />
         </button>
       </div>
