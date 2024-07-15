@@ -62,7 +62,7 @@ body {
 
 // Player
 .player {
-  padding: 2rem;
+  padding: 1rem;
 
   &__thumbnail-wrapper {
     display: flex;
@@ -119,5 +119,64 @@ body {
 
   &__time {
     font-size: var(--step--1);
+  }
+
+  &__controls {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+  }
+
+  &__controls--control {
+    background: transparent;
+    display: block;
+    cursor: pointer;
+    border: none;
+    // border: 0.125rem solid red;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, transparent, transparent);
+    transition: 0.25s ease;
+
+    &:hover {
+      box-shadow: 5px 5px 20px hsla(from m.color(neutral__black) h s l / 0.15);
+      scale: 1.1;
+
+      & img {
+        scale: 1.2;
+        opacity: 0.75;
+        rotate: 360deg;
+      }
+    }
+
+    & img {
+      transition: 0.25s ease;
+      max-width: 1.5rem;
+    }
+  }
+
+  .control-play {
+    background: linear-gradient(
+      m.color(primary__blue-600) 5%,
+      m.color(primary__cyan-500)
+    );
+    background-size: cover;
+    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      max-width: 2rem;
+    }
   }
 }
